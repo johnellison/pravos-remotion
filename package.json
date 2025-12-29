@@ -1,0 +1,53 @@
+{
+  "name": "pravos-remotion",
+  "version": "1.0.0",
+  "description": "Remotion video generator for Pravos focus music albums",
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render",
+    "upgrade": "remotion upgrade",
+    "render": "node render.mjs",
+    "render:short": "node render-short.mjs",
+    "render:story": "node render-story.mjs",
+    "render:batch": "./batch-render.sh",
+    "render:batch:shorts": "./batch-render-shorts.sh",
+    "render:batch:stories": "./batch-render-stories.sh",
+    "thumbnail": "node render-thumbnail.mjs",
+    "youtube:auth": "tsx scripts/youtube-auth.ts",
+    "youtube:publish": "tsx scripts/publish-video.ts",
+    "youtube:publish:all": "tsx scripts/batch-publish.ts --all",
+    "youtube:publish:test": "tsx scripts/batch-publish.ts",
+    "youtube:publish:short": "tsx scripts/publish-short.ts",
+    "youtube:publish:shorts:all": "tsx scripts/batch-publish-shorts.ts --all",
+    "youtube:publish:shorts:test": "tsx scripts/batch-publish-shorts.ts",
+    "youtube:reschedule": "tsx scripts/reschedule-videos.ts"
+  },
+  "keywords": [
+    "remotion",
+    "pravos",
+    "focus-music",
+    "video-generation"
+  ],
+  "author": "John Ellison",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "^4.0.396",
+    "@remotion/google-fonts": "^4.0.396",
+    "@remotion/lambda": "^4.0.396",
+    "@remotion/media-utils": "^4.0.396",
+    "@remotion/renderer": "^4.0.396",
+    "dotenv": "^17.2.3",
+    "googleapis": "^169.0.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.396",
+    "tsx": "^4.19.2",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.396",
+    "@types/react": "^18.3.27",
+    "typescript": "^5.9.3"
+  }
+}
