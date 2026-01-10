@@ -21,7 +21,9 @@
     "youtube:publish:short": "tsx scripts/publish-short.ts",
     "youtube:publish:shorts:all": "tsx scripts/batch-publish-shorts.ts --all",
     "youtube:publish:shorts:test": "tsx scripts/batch-publish-shorts.ts",
-    "youtube:reschedule": "tsx scripts/reschedule-videos.ts"
+    "youtube:reschedule": "tsx scripts/reschedule-videos.ts",
+    "youtube:auto-publish": "tsx scripts/auto-publish.ts",
+    "notify:test": "tsx scripts/send-notification.ts success 'Test Notification' 'Testing email notifications from Pravos automation'"
   },
   "keywords": [
     "remotion",

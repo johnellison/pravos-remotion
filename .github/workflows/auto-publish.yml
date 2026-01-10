@@ -1,0 +1,64 @@
+name: Pravos Auto-Publisher
+
+on:
+  schedule:
+    # Run daily at 9:05 AM PST (17:05 UTC)
+    # PST is UTC-8, so 9:05 AM PST = 17:05 UTC
+    - cron: '5 17 * * *'
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  auto-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create .env file
+        run: |
+          echo "YOUTUBE_CLIENT_ID=${{ secrets.YOUTUBE_CLIENT_ID }}" >> .env
+          echo "YOUTUBE_CLIENT_SECRET=${{ secrets.YOUTUBE_CLIENT_SECRET }}" >> .env
+          echo "YOUTUBE_REDIRECT_URI=${{ secrets.YOUTUBE_REDIRECT_URI }}" >> .env
+          echo "RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}" >> .env
+          echo "NOTIFICATION_EMAIL=${{ secrets.NOTIFICATION_EMAIL }}" >> .env
+
+      - name: Create YouTube tokens file
+        run: echo '${{ secrets.YOUTUBE_TOKENS }}' > .youtube-tokens.json
+
+      - name: Run auto-publisher
+        run: npm run youtube:auto-publish
+        env:
+          TZ: America/Los_Angeles
+
+      - name: Commit updated tracking file
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add published-tracking.json
+          git diff --staged --quiet || git commit -m "chore: update published tracking [skip ci]"
+
+      - name: Push changes
+        if: success()
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "Auto-publish workflow failed"
+          echo "Check logs at: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"

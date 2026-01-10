@@ -1,0 +1,60 @@
+{
+  "videos": [
+    {
+      "slug": "neural-drift",
+      "title": "Neural Drift - 25 Min Ambient Focus Music | Pravos Deep Work Sessions",
+      "publishedDate": "2026-01-10",
+      "publishedManually": true,
+      "type": "video",
+      "status": "published"
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "cognitive-bloom",
+      "title": "Cognitive Bloom - Focus Music #Shorts",
+      "publishedDate": "2025-12-29",
+      "publishedManually": true,
+      "type": "short",
+      "status": "published",
+      "views": 74
+    },
+    {
+      "slug": "neural-drift",
+      "title": "Neural Drift - Ambient Focus Music #Shorts",
+      "publishedDate": "2025-12-29",
+      "publishedManually": true,
+      "type": "short",
+      "status": "published",
+      "views": 75
+    },
+    {
+      "slug": "deep-piano-focus",
+      "title": "Deep Piano Focus - Piano Music for Deep Work #Shorts",
+      "publishedDate": "2025-12-29",
+      "publishedManually": true,
+      "type": "short",
+      "status": "published",
+      "views": 56
+    },
+    {
+      "slug": "meditative-ambient",
+      "title": "Meditative Ambient - Calm Focus Music #Shorts",
+      "publishedDate": "2025-12-29",
+      "publishedManually": true,
+      "type": "short",
+      "status": "published",
+      "views": 33
+    }
+  ],
+  "nextScheduled": {
+    "video": {
+      "slug": "cognitive-bloom",
+      "scheduledFor": "2026-01-13T09:00:00-08:00"
+    },
+    "short": {
+      "slug": "scripted-light",
+      "scheduledFor": "2026-01-14T09:00:00-08:00"
+    }
+  }
+}
