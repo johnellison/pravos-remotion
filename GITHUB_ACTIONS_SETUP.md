@@ -27,23 +27,23 @@ Commits Tracking File Back to Repo
 ## Publishing Schedule
 
 **Videos** (Mondays at 9:00 AM PST):
-- Jan 13: Cognitive Bloom
-- Jan 20: Deep Piano Focus
-- Jan 27: Meditative Ambient
-- Feb 3: Scripted Light
-- Feb 10: Soulful Lounge
-- Feb 17: Sufi Lofi
-- Feb 24: Vibe Coding
-- Mar 3: Relaxed Neo Classical
-- Mar 10: Healing Handpan
+- Jan 19: Cognitive Bloom
+- Jan 26: Deep Piano Focus
+- Feb 2: Meditative Ambient
+- Feb 9: Scripted Light
+- Feb 16: Soulful Lounge
+- Feb 23: Sufi Lofi
+- Mar 2: Vibe Coding
+- Mar 9: Relaxed Neo Classical
+- Mar 16: Healing Handpan
 
 **Shorts** (Tuesdays at 9:00 AM PST):
-- Jan 14: Scripted Light
-- Jan 21: Soulful Lounge
-- Jan 28: Sufi Lofi
-- Feb 4: Vibe Coding
-- Feb 11: Relaxed Neo Classical
-- Feb 18: Healing Handpan
+- Jan 20: Scripted Light
+- Jan 27: Soulful Lounge
+- Feb 3: Sufi Lofi
+- Feb 10: Vibe Coding
+- Feb 17: Relaxed Neo Classical
+- Feb 24: Healing Handpan
 
 ---
 

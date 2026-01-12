@@ -32,26 +32,26 @@ You now have a **fully automated YouTube publishing system** for Pravos focus mu
 
 | Week | Album | Date | Status |
 |------|-------|------|--------|
-| 1 | **Cognitive Bloom** | Jan 13, 2026 | 🔜 Next Monday |
-| 2 | Deep Piano Focus | Jan 20, 2026 | ⏰ Scheduled |
-| 3 | Meditative Ambient | Jan 27, 2026 | ⏰ Scheduled |
-| 4 | Scripted Light | Feb 3, 2026 | ⏰ Scheduled |
-| 5 | Soulful Lounge | Feb 10, 2026 | ⏰ Scheduled |
-| 6 | Sufi Lofi | Feb 17, 2026 | ⏰ Scheduled |
-| 7 | Vibe Coding | Feb 24, 2026 | ⏰ Scheduled |
-| 8 | Relaxed Neo Classical | Mar 3, 2026 | ⏰ Scheduled |
-| 9 | Healing Handpan | Mar 10, 2026 | ⏰ Scheduled |
+| 1 | **Cognitive Bloom** | Jan 19, 2026 | 🔜 Next Monday |
+| 2 | Deep Piano Focus | Jan 26, 2026 | ⏰ Scheduled |
+| 3 | Meditative Ambient | Feb 2, 2026 | ⏰ Scheduled |
+| 4 | Scripted Light | Feb 9, 2026 | ⏰ Scheduled |
+| 5 | Soulful Lounge | Feb 16, 2026 | ⏰ Scheduled |
+| 6 | Sufi Lofi | Feb 23, 2026 | ⏰ Scheduled |
+| 7 | Vibe Coding | Mar 2, 2026 | ⏰ Scheduled |
+| 8 | Relaxed Neo Classical | Mar 9, 2026 | ⏰ Scheduled |
+| 9 | Healing Handpan | Mar 16, 2026 | ⏰ Scheduled |
 
 ### Shorts (Tuesdays at 9 AM PST)
 
 | Week | Album | Date | Status |
 |------|-------|------|--------|
-| 1 | **Scripted Light** | Jan 14, 2026 | 🔜 Next Tuesday |
-| 2 | Soulful Lounge | Jan 21, 2026 | ⏰ Scheduled |
-| 3 | Sufi Lofi | Jan 28, 2026 | ⏰ Scheduled |
-| 4 | Vibe Coding | Feb 4, 2026 | ⏰ Scheduled |
-| 5 | Relaxed Neo Classical | Feb 11, 2026 | ⏰ Scheduled |
-| 6 | Healing Handpan | Feb 18, 2026 | ⏰ Scheduled |
+| 1 | **Scripted Light** | Jan 20, 2026 | 🔜 Next Tuesday |
+| 2 | Soulful Lounge | Jan 27, 2026 | ⏰ Scheduled |
+| 3 | Sufi Lofi | Feb 3, 2026 | ⏰ Scheduled |
+| 4 | Vibe Coding | Feb 10, 2026 | ⏰ Scheduled |
+| 5 | Relaxed Neo Classical | Feb 17, 2026 | ⏰ Scheduled |
+| 6 | Healing Handpan | Feb 24, 2026 | ⏰ Scheduled |
 
 ---
 
@@ -141,14 +141,14 @@ crontab -l | grep -v "auto-publish-cron.sh" | crontab -
 
 ## What Happens Next
 
-### This Monday (Jan 13, 2026)
-- **9:05 AM**: Cron job runs
+### Next Monday (Jan 19, 2026)
+- **9:05 AM**: GitHub Actions runs
 - **9:05 AM**: Publishes "Cognitive Bloom" video to YouTube
 - **9:05 AM**: Email notification sent to you
 - **Result**: Video live at `youtube.com/watch?v=[ID]`
 
-### This Tuesday (Jan 14, 2026)
-- **9:05 AM**: Cron job runs
+### Next Tuesday (Jan 20, 2026)
+- **9:05 AM**: GitHub Actions runs
 - **9:05 AM**: Publishes "Scripted Light" short to YouTube
 - **9:05 AM**: Email notification sent to you
 
