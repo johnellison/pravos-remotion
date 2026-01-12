@@ -32,31 +32,16 @@ async function publishShort(albumSlug: string) {
 
   const metadata: ShortMetadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
 
-  const publishDate = new Date(metadata.publishDate);
-  const now = new Date();
-  const isPastDate = publishDate <= now;
-
   console.log(`\n🩳 Publishing SHORT: ${metadata.title}`);
   console.log(`📂 Video: ${videoPath}`);
   console.log(`📅 Scheduled for: ${metadata.publishDate}`);
-  
-  if (isPastDate) {
-    console.log(`\n⚠️  WARNING: Publish date is in the past!`);
-    console.log(`   Short will be published immediately as ${metadata.privacyStatus}`);
-    console.log(`   If this is not intended, update the year in: ${metadataPath}`);
-  }
+  console.log(`📢 Publishing as: ${metadata.privacyStatus}`);
 
   const auth = await authorize();
   const youtube = google.youtube({ version: 'v3', auth });
 
-  const shouldSchedule = publishDate > now;
-
   console.log('\n📤 Uploading short...');
-  if (shouldSchedule) {
-    console.log(`⏰ Scheduling for: ${metadata.publishDate}`);
-  } else {
-    console.log(`📢 Publishing immediately (date is in the past)`);
-  }
+  console.log(`✨ Publishing immediately as ${metadata.privacyStatus}`);
 
   const videoInsertResponse = await youtube.videos.insert({
     part: ['snippet', 'status'],
@@ -68,8 +53,7 @@ async function publishShort(albumSlug: string) {
         categoryId: metadata.categoryId,
       },
       status: {
-        privacyStatus: shouldSchedule ? 'private' : metadata.privacyStatus,
-        publishAt: shouldSchedule ? metadata.publishDate : undefined,
+        privacyStatus: metadata.privacyStatus,
         selfDeclaredMadeForKids: false,
       },
     },
