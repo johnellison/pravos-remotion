@@ -27,7 +27,8 @@
       "publishedManually": true,
       "type": "short",
       "status": "published",
-      "views": 74
+      "views": 74,
+      "note": "Already published - do not republish"
     },
     {
       "slug": "neural-drift",
@@ -36,7 +37,8 @@
       "publishedManually": true,
       "type": "short",
       "status": "published",
-      "views": 75
+      "views": 75,
+      "note": "Already published - do not republish"
     },
     {
       "slug": "deep-piano-focus",
@@ -45,7 +47,8 @@
       "publishedManually": true,
       "type": "short",
       "status": "published",
-      "views": 56
+      "views": 56,
+      "note": "Already published - do not republish"
     },
     {
       "slug": "meditative-ambient",
@@ -54,7 +57,8 @@
       "publishedManually": true,
       "type": "short",
       "status": "published",
-      "views": 33
+      "views": 33,
+      "note": "Already published - do not republish"
     }
   ],
   "nextScheduled": {
