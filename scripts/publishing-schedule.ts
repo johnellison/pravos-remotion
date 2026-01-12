@@ -22,10 +22,10 @@ export const PUBLISHING_SCHEDULE: ScheduledContent[] = [
   {
     week: 1,
     videoSlug: 'cognitive-bloom',
-    videoDate: '2026-01-12T09:00:00-08:00', // Monday Jan 12 - TODAY!
+    videoDate: '2026-01-12T09:00:00-08:00', // Monday Jan 12 - PUBLISHED!
     shortSlug: 'scripted-light',
     shortDate: '2026-01-13T09:00:00-08:00', // Tuesday Jan 13
-    published: { video: false, short: false }
+    published: { video: true, short: false }
   },
   {
     week: 2,
