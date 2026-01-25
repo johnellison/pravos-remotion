@@ -1,0 +1,23 @@
+{
+  "lastPublishedIndex": 3,
+  "publishedStories": [
+    {
+      "albumSlug": "cognitive-bloom",
+      "publishedAt": "2026-01-25T09:12:19.686Z"
+    },
+    {
+      "albumSlug": "deep-piano-focus",
+      "publishedAt": "2026-01-25T09:13:21.515Z"
+    },
+    {
+      "albumSlug": "healing-handpan",
+      "publishedAt": "2026-01-25T10:23:31.335Z",
+      "postId": "6975eed00d97e846127a3eb0"
+    },
+    {
+      "albumSlug": "meditative-ambient",
+      "publishedAt": "2026-01-25T10:26:49.426Z",
+      "postId": "6975efc59febf54a855e2d1c"
+    }
+  ]
+}
