@@ -23,6 +23,7 @@
     "youtube:publish:shorts:test": "tsx scripts/batch-publish-shorts.ts",
     "youtube:reschedule": "tsx scripts/reschedule-videos.ts",
     "youtube:auto-publish": "tsx scripts/auto-publish.ts",
+    "instagram:publish:story": "tsx scripts/publish-instagram-story.ts",
     "notify:test": "tsx scripts/send-notification.ts success 'Test Notification' 'Testing email notifications from Pravos automation'"
   },
   "keywords": [
